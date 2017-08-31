@@ -57,7 +57,7 @@ public class Multiplication {
 				sum += Double.parseDouble(movie[1]);
 			}
 			sum /= movies.length;
-			for (int i = 1; i <= 5; i++) {
+			for (int i = 1; i <= 17770; i++) {
 				if (!set.contains(String.valueOf(i)))
 					context.write(new Text(String.valueOf(i)), new Text(user_movieRatings[0] + ":" + sum));
 			}
